@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Synced</string>
+    <string name="share_string">Share Synced</string>
+    <string name="share_button">Synced</string>
+    <string name="contact">Contact Us...</string>
+    <string name="exit_app">Exit</string>
+    <string name="add_server">Add</string>
+    <string name="message_server">Add a new server...</string>
+    <string name="new_storage">New</string>
+    <string name="add_storage_string">Add a new storage...</string>
+    <string name="cloud">Cloud</string>
+    <string name="user">User</string>
+    <string name="password">Password</string>
+    <string name="go">Go</string>
+    <string name="ip_address">Host</string>
+    <string name="port_number">21</string>
+    <string name="up">Up</string>
+    <string name="title_activity_choose">Home</string>
+    <string name="action_settings">Action</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="title_activity_directory">Title</string>
+    <string name="icon_file_list">iconF</string>
+    <string name="icon_for_folder">icon_for_folder</string>
+    <string name="title_activity_setup_server">SetupServerActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_local_directory">LocalDirectoryActivity</string>
+    <string name="default_value_port">21</string>
+</resources>

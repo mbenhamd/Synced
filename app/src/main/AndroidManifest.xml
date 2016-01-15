@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.synced" >
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainLoadingActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChooseActivity"
+            android:label="@string/title_activity_choose">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synced.MainLoadingActivity" />
+            >
+        </activity>
+        <activity
+            android:name=".NewStorageActivity"
+            android:label="@string/title_activity_choose"
+            android:parentActivityName=".ChooseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synced.ChooseActivity" />
+        </activity>
+        <activity
+            android:name=".DirectoryActivity"
+            android:label="@string/title_activity_directory" >
+        </activity>
+        <activity
+            android:name=".SetupServerActivity"
+            android:label="@string/title_activity_setup_server"
+            android:parentActivityName=".NewStorageActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synced.NewStorageActivity" />
+        </activity>
+        <activity
+            android:name=".LocalDirectoryActivity"
+            android:label="@string/title_activity_local_directory"
+            android:parentActivityName=".SetupServerActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synced.SetupServerActivity" />
+        </activity>
+    </application>
+
+</manifest>

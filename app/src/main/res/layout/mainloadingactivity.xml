@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/MainLoadingScreen"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    android:background="#99e4f5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FullLayoutScreen"
+        android:background="#ff657ff5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:id="@+id/WelcomeMessage"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="@android:dimen/app_icon_size"
+            android:autoText="false"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+</LinearLayout>

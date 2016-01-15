@@ -1,0 +1,277 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.synced.NewStorageActivity"
+    android:background="#D3D3D3"
+    android:focusable="false"
+    android:id="@+id/NewStorageLayout">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Name_server_text"
+        android:textColor="#ff000000"
+        android:layout_alignBottom="@+id/New_add_setup"
+        android:layout_toRightOf="@+id/New_add_setup"
+        android:layout_toStartOf="@+id/Exit"
+        android:layout_toLeftOf="@+id/Exit"
+        android:text="User" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Host_text"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/Name_server_text"
+        android:layout_alignLeft="@+id/Name_server_text"
+        android:layout_alignStart="@+id/Name_server_text"
+        android:layout_toStartOf="@+id/Cloud"
+        android:layout_alignRight="@+id/Name_server_text"
+        android:layout_alignEnd="@+id/Name_server_text"
+        android:text="Host" />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/New_add_setup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_add_box_black_24dp"
+        android:backgroundTint="#ff657ff5"
+        android:contentDescription="@string/add_storage_string" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local :"
+        android:id="@+id/Local_text"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/Text_add_location"
+        android:layout_toRightOf="@+id/Add_location"
+        android:layout_toEndOf="@+id/Add_location" />
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/Storage"
+        android:background="@drawable/abc_ic_clear_mtrl_alpha"
+        android:contentDescription="@string/exit_app"
+        android:focusableInTouchMode="false"
+        android:backgroundTint="#ff657ff5"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/Exit"
+        android:background="@drawable/abc_ic_clear_mtrl_alpha"
+        android:contentDescription="@string/exit_app"
+        android:focusableInTouchMode="false"
+        android:backgroundTint="#ff657ff5"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/Contact"
+        android:background="@drawable/ic_email_black_24dp"
+        android:backgroundTint="#ff657ff5"
+        android:contentDescription="@string/contact"
+        android:layout_alignTop="@+id/Exit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:showAsAction="ifRoom"
+        android:title="@string/share_string"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/Share"
+        android:background="@drawable/abc_ic_menu_share_mtrl_alpha"
+        android:backgroundTint="#ff657ff5"
+        android:contentDescription="@string/share_button"
+        android:cropToPadding="false"
+        android:layout_alignTop="@+id/Exit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/Cloud"
+        android:background="@drawable/ic_cloud_white_18dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:contentDescription="@string/cloud"
+        android:layout_alignBottom="@+id/Name_server_text"
+        android:layout_alignLeft="@+id/Share"
+        android:layout_alignStart="@+id/Share" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a location for syncing...."
+        android:id="@+id/Text_add_location"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/Host_text"
+        android:layout_toRightOf="@+id/Add_location"
+        android:layout_toEndOf="@+id/Add_location" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Add_location"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/Host_text"
+        android:layout_toStartOf="@+id/Host_text"
+        android:layout_alignTop="@+id/Text_add_location"
+        android:layout_alignBottom="@+id/Text_add_location"
+        android:src="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Server :"
+        android:id="@+id/Server_text"
+        android:layout_alignBottom="@+id/Local_text"
+        android:layout_toRightOf="@+id/Text_add_location"
+        android:layout_toEndOf="@+id/Text_add_location" />
+
+    <ImageButton
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:id="@+id/Search_server"
+        android:src="@android:drawable/ic_menu_search"
+        android:layout_alignTop="@+id/Server_text"
+        android:layout_alignRight="@+id/Fill_Port"
+        android:layout_alignEnd="@+id/Fill_Port" />
+
+    <ImageButton
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:id="@+id/Search_local"
+        android:src="@android:drawable/ic_menu_search"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/Local_text"
+        android:layout_toRightOf="@+id/Local_text"
+        android:layout_toEndOf="@+id/Local_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fill_User"
+        android:textColor="#ff000000"
+        android:layout_above="@+id/Host_text"
+        android:layout_toRightOf="@+id/Name_server_text"
+        android:layout_toLeftOf="@+id/Cloud"
+        android:layout_toStartOf="@+id/Cloud" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fill_Host"
+        android:textColor="#ff000000"
+        android:layout_alignTop="@+id/Host_text"
+        android:layout_toRightOf="@+id/Host_text"
+        android:layout_alignRight="@+id/Fill_User"
+        android:layout_alignEnd="@+id/Fill_User" />
+
+    <ImageButton
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:id="@+id/Send_file"
+        android:src="@android:drawable/ic_menu_send"
+        android:layout_below="@+id/Search_local"
+        android:layout_alignRight="@+id/Text_add_location"
+        android:layout_alignEnd="@+id/Text_add_location"
+        android:layout_marginTop="17dp"
+        android:layout_toRightOf="@+id/Search_local"
+        android:layout_toEndOf="@+id/Search_local" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Informations_text"
+        android:textColor="#ff000000"
+        android:text="Informations"
+        android:layout_below="@+id/Host_text"
+        android:layout_alignLeft="@+id/Host_text"
+        android:layout_alignStart="@+id/Host_text"
+        android:layout_toLeftOf="@+id/Fill_Host"
+        android:layout_toStartOf="@+id/Fill_Host" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fill_Informations"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/Fill_Host"
+        android:layout_toRightOf="@+id/Host_text"
+        android:layout_alignRight="@+id/Fill_Host"
+        android:layout_alignEnd="@+id/Fill_Host" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Port_informations"
+        android:textColor="#ff000000"
+        android:text="Port"
+        android:layout_below="@+id/Informations_text"
+        android:layout_alignLeft="@+id/Informations_text"
+        android:layout_alignStart="@+id/Informations_text"
+        android:layout_toLeftOf="@+id/Fill_Informations"
+        android:layout_toStartOf="@+id/Fill_Informations" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fill_Port"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/Informations_text"
+        android:layout_toLeftOf="@+id/Cloud"
+        android:layout_toRightOf="@+id/Informations_text"
+        android:layout_toEndOf="@+id/Informations_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fill_Server_Path"
+        android:textColor="#ff000000"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/Search_server"
+        android:layout_alignEnd="@+id/Search_server"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fill_Local_Path"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/Fill_Server_Path"
+        android:layout_alignLeft="@+id/Fill_Server_Path"
+        android:layout_alignStart="@+id/Fill_Server_Path"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/Fill_Server_Path"
+        android:layout_alignEnd="@+id/Fill_Server_Path" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Fill_name_file_local"
+        android:textColor="#ff000000"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/Fill_Local_Path"
+        android:layout_alignRight="@+id/Fill_Port"
+        android:layout_alignEnd="@+id/Fill_Port"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
