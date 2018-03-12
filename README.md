@@ -1,2 +1,2 @@
 # Synced
-App Android of Sync
+Android App for Sync
